@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tich cac so le cua so nguyen duong n</title>
+</head>
+<body>
+<h2>Tich cac so le cua so nguyen duong n</h2>
+<script>
+    let n= prompt("nhap n");
+    document.write("So nguyen n :" +n +"<br>");
+    let sum =1;
+    for(let i=0;i<n.length;i++){
+        if(n[i]%2!=0) {
+            sum*=parseInt(n[i]);
+        }
+    }document.write("Tich cac so le cua so nguyen duong n la: " +sum);
+</script>
+
+</body>
+</html>

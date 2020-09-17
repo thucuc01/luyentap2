@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 57: Hãy kiểm tra số nguyên dương n có toàn chữ số chẵn hay không</title>
+</head>
+<body>
+<h2>Bài 57: Hãy kiểm tra số nguyên dương n có toàn chữ số chẵn hay không</h2>
+</body>
+</html>
+<script>
+    let n= prompt("nhap n");
+    document.write("So nguyen duong n :" +n +"<br>");
+    let i=0;
+
+    while (i<n.length) {
+        if (n[i]%2!=0) {
+            alert("khong phai toan so chan");
+        } else {
+            i++;
+        }
+    }
+</script>

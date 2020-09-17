@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h3>Tim uoc chung lon nhat</h3>
+<p id="uocchung"></p>
+<script>
+   let a =parseInt(prompt("nhap so nguyen duong a"));
+   let b =parseInt(prompt("nhap so nguyen duong b"));
+   let uocchung= [];
+   if (a<=b) {
+     for(let i = 2; i <= a; i++) {
+       if (a % i == 0 && b % i == 0) {
+         document.write( "uoc chung la: "+i +"<br>");
+         uocchung.push(i);
+       }
+     }
+     document.write("uoc chung lon nhat la" +uocchung[uocchung.length-1]);
+   } else {
+     for(let i = 2; i <= b; i++) {
+       if (a % i == 0 && b % i == 0) {
+         document.write( "uoc chung la: "+i +"<br>");
+         uocchung.push(i);
+       }
+     }
+     document.write("uoc chung lon nhat la" +uocchung[uocchung.length-1]);
+   }
+</script>
+</body>
+</html>

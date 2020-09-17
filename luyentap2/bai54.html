@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Hãy đếm số lượng chữ số nhỏ nhất của số nguyên dương n</h2>
+</body>
+</html>
+<script>
+    let n= prompt("nhap n");
+    document.write("So nguyen duong n :" +n +"<br>");
+    let min=9;
+    let count=0;
+
+    for (let i=0;i<n.length;i++) {
+        if (n[i]<=min){
+            min=n[i];
+        }
+    }
+    document.write("so nho nhat la : " +min +"<br>");
+
+    for (let j=0;j<n.length;j++) {
+        if (n[j]==min) {
+            count++;
+        }
+    } document.write("co " +count +" so nho nhat");
+</script>

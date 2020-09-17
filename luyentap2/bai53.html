@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Hãy đếm số lượng chữ số lớn nhất của số nguyên dương n</h2>
+</body>
+</html>
+<script>
+    let n= prompt("nhap n");
+    document.write("So nguyen duong n :" +n +"<br>");
+    let max=0;
+    let count=0;
+    for (let i=0;i<n.length;i++) {
+        if (n[i]>=max){
+            max=n[i];
+        }
+    } document.write("so lon nhat la : " +max +"<br>");
+
+    for (let j=0;j<n.length;j++) {
+        if (n[j]==max) {
+            count++;
+        }
+    } document.write("co " +count +" so lon nhat");
+</script>
