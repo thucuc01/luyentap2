@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 82: Viết chương trình tìm số lớn nhất trong 3 số thực a, b, c</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a= prompt('nhap a');
+    let b= prompt('nhap b');
+    let c= prompt('nhap c');
+    let array= [a, b , c];
+    let max= a;
+    for (let i=1;i<array.length;i++){
+        if (array[i]>max){
+            max=array[i];
+        }
+    }
+    document.write("so lon nhat la: " +max);
+</script>

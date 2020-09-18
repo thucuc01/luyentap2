@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h2> Kiem tra so nguyen duong n co phai so doi xung khong</h2>
+<body>
+<p id="value"></p>
+</body>
+</html>
+<script>
+    let n= prompt("nhap n");
+    let array=[];
+    document.write("So nguyen duong n :" +n +"<br>");
+    for (let i=0;i<n.length;i++) {
+        array.push(n[i]);
+    }
+    let arraynew= array.reverse().join('');
+    console.log(arraynew);
+    if (arraynew==n) {
+        document.write('la so doi xung')
+    } else {
+        document.write('khong la so doi xung')
+    }
+
+
+</script>

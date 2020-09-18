@@ -6,15 +6,24 @@
 </head>
 <body>
 <h3>Tim boi chung nho nhat</h3>
-<p id="uocchung"></p>
+<p id="boichung"></p>
 <script>
-    let a =parseInt(prompt("nhap so nguyen duong a"));
-    let b =parseInt(prompt("nhap so nguyen duong b"));
-    for (let i=2; i <=a || i<= b; i++) {
-        if ( a%i==0 && b%i==0) {
+    let numberfirst =parseInt(prompt("nhap so nguyen duong a"));
+    let numbersecond =parseInt(prompt("nhap so nguyen duong b"));
+    if (numberfirst<=numbersecond) {
+        for(let min=numbersecond;min<=numberfirst*numbersecond;min++){
+            if(min%numberfirst==0 && min%numbersecond==0) {
+                document.write("boi chung nho nhat la : " +min);
+                break;
+            }
         }
-        document.getElementById("uocchung").innerHTML="boi chung nho nhat la: " +i;
-
+    } else {
+        for(let min=numberfirst;min<=numberfirst*numbersecond;min++){
+            if(min%numberfirst==0 && min%numbersecond==0) {
+                document.write("boi chung nho nhat la : " +min);
+                break;
+            }
+        }
     }
 </script>
 </body>

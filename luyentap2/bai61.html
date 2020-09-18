@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h2> Hãy kiểm tra các chữ số của số nguyên dương n có giảm dần từ trái sang phải hay không </h2>
+<body>
+<p id="value"></p>
+</body>
+</html>
+<script>
+    let n= prompt("nhap n");
+    let check;
+    let a=n[0];
+    for( let i=1; i<n.length;i++){
+        if (n[i]< a){
+            a=n[i];
+            check=true;
+        }else {
+            check=false;
+            break;
+        }
+    }
+    if (check==true) {
+        alert("giam dan tu trai sang phai");
+    } else {
+        if (check ==false){
+            alert("khong giam dan tu trai sang phai")
+        }
+    }
+</script>
