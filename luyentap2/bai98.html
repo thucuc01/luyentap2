@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 98: Lập chương trình giải hệ: ax + by = c,Dx + ey = f. Các hệ số nhập từ bàn phím</title>
+</head>
+<body>
+<input type="number" id="nhapa"> x + <input type="number" id="nhapb"> y = <input type="number" id="nhapc"> <br>
+<input type="number" id="nhapd"> x + <input type="number" id="nhape"> y = <input type="number" id="nhapf"> <br>
+<br>
+<button onclick="Ketqua()"> Giai he phuong trinh</button>
+<a id="ketqua"></a>
+</body>
+</html>
+<script>
+    function Ketqua(){
+        let a= +document.getElementById("nhapa").value;
+        let b= +document.getElementById("nhapb").value;
+        let c= +document.getElementById("nhapc").value;
+        let d= +document.getElementById("nhapd").value;
+        let e= +document.getElementById("nhape").value;
+        let f= +document.getElementById("nhapf").value;
+        if (e==0 && d!=0 && b!=0){
+            document.getElementById("ketqua").innerHTML= 'PT co 1 nghiem x = ' +f/d + '<br> y = ' +(c-a*f/d)/b;
+        } else {
+            if (e!=0){
+                if (a*e==b*d && c*e==b*f) {
+                    document.getElementById("ketqua").innerHTML = "PT vo so nghiem";
+                }
+                else {
+                    if( a*e==d*b) {
+                        document.getElementById("ketqua").innerHTML= "PT vo nghiem";
+                    } else {
+                        document.getElementById("ketqua").innerHTML= 'PT co 1 nghiem x = ' +(c*e-f*b)/(a*e-b*d) + "<br> va y = " +(f-d*(c*e-f*b)/(a*e-b*d))/e;
+                    }
+                }
+            }
+
+        }
+        }
+
+
+</script>

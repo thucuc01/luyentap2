@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 101: Viết chương trình nhập tháng, năm. Hãy cho biết tháng đó có baonhiêu ngày</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Nhap thang : </td>
+        <td><input type="number" id="thang"></td>
+    </tr>
+    <tr>
+        <td>Nhap nam : </td>
+        <td><input type = number id="nam"></td>
+    </tr>
+</table>
+<button onclick="Ketqua()">Ket qua </button> <br>
+<br>
+Thang nay co: <a id="getvalue"></a>
+
+</body>
+</html>
+<script>
+    function Ketqua() {
+        let month= +document.getElementById("thang").value;
+        let year = +document.getElementById("nam").value;
+       if(month<13){
+           if ( month == 1 || month ==3 || month==5 || month==7 || month ==8 || month==10|| month==12) {
+               document.getElementById("getvalue").innerHTML= 31 + ' ngay';
+           } else {
+               if ( month==4||month==6 || month==9 || month==11) {
+                   document.getElementById("getvalue").innerHTML = 30 +' ngay';
+               } else {
+                   if(month ==2) {
+                       if (year%4==0){
+                           document.getElementById('getvalue').innerHTML=29 +'ngay';
+                       } else {
+                           document.getElementById('getvalue').innerHTML=28 +'ngay';
+                       }
+                   }
+               }
+           }
+       }else {
+           document.getElementById('getvalue').innerHTML= "Vui long nhap lai";
+       }
+    }
+
+
+</script>

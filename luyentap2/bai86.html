@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hãy sử dụng vòng lặp for để xuất tất cả các ký tự từ A đến Z</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var mang = [
+        1,
+        "abccs",
+        true, false,
+        [
+            1,2,3,
+            {
+                ten: "sonmc",
+                tuoi: 30
+            }
+        ],
+        {
+            ten: "sonmc",
+            tuoi: 30
+        }
+
+    ]
+
+    console.log(mang);
+    var array="A;B;C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z";
+    var arrSt = array.split(";");
+    for ( let i=0;i<arrSt.length;i++){
+        document.write(arrSt[i]);
+        if(i == 2){
+            var newArr = arrSt[i].split(",");
+        }
+    }
+</script>

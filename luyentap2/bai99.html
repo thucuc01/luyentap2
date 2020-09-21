@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình nhập vào 3 số thực. Hãy in 3 số ấy ra màn hình theo thứ tự tang dần mà chỉ dùng tối đa 1 biến phụ</title>
+</head>
+<body>
+<button onclick="myFunction()">Sap xep</button>
+
+<p id="demo"></p>
+</body>
+</html>
+<script>
+    let a= +prompt('nhap a');
+    let b= +prompt('nhap b');
+    let c= +prompt('nhap c');
+    var array = [a,b,c];
+    document.getElementById("demo").innerHTML = "3 so nhap vao la: " +array;
+    function myFunction() {
+        array.sort(function(a, b){return a - b});
+        document.getElementById("demo").innerHTML = 'Sap xep day tang dan: ' +array;
+    }
+</script>

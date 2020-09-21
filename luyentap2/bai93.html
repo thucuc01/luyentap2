@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình kiểm tra 1 số có phải là số nguyên tố hay không</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let number = parseInt(prompt('nhap number'));
+    let a;
+    if (number==2){
+        alert(number +' la so nguyen to');
+    } else {
+        if (number>2) {
+            for(let i=2;  i<number ;i++) {
+                if ( number%i==0){
+                    a= false;
+                    break;
+                } else {
+                    a=true;
+                }
+            }
+        }
+        if(a==false){
+            alert("la khong so nguyen to")
+        } else {
+            alert(('a la so nguyen to'))
+        }
+
+    }
+
+</script>
